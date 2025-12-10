@@ -1,0 +1,154 @@
+/* --- Variables for Pink Theme --- */
+:root {
+    --primary-pink: #FFC1CC;  
+    --dark-pink: #FF6F91;
+    --bg-light: #FFF0F5;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding-top: 60px;
+}
+
+/* --- Bootstrap Override (Bonus) --- */
+.bg-pink {
+    background-color: var(--white) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    color: var(--dark-pink) !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--dark-pink) !important;
+}
+
+/* --- Header Section --- */
+.header-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff 0%, #FFF0F5 100%);
+    border-bottom: 4px solid var(--primary-pink);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-pink);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: var(--dark-pink);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d64d6f;
+    transform: translateY(-3px);
+}
+
+/* --- Content Boxes --- */
+.section-box {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border-left: 5px solid var(--primary-pink);
+}
+
+.section-title {
+    color: var(--dark-pink);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* --- Projects --- */
+.project-card {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.project-card:last-child {
+    border-bottom: none;
+}
+
+.btn-pink {
+    background-color: var(--dark-pink);
+    color: white;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #d64d6f;
+    color: white;
+}
+
+/* --- Skills Tags --- */
+.skill-tag {
+    display: inline-block;
+    background-color: var(--bg-light);
+    color: var(--dark-pink);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid var(--primary-pink);
+}
+
+/* --- Contact Form --- */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-control:focus {
+    border-color: var(--dark-pink);
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 145, 0.25);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-pink);
+    color: white;
+    margin-top: 40px;
+}
+
+/* --- RESPONSIVENESS (Requirement: 576px, 768px, 992px) --- */
+/* Mobile Devices (max 576px) */
+@media (max-width: 576px) {
+    .header-section {
+        padding: 30px 10px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+    .section-box {
+        padding: 20px;
+    }
+}
